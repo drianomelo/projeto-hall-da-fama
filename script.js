@@ -29,6 +29,8 @@ btnFecharModal.addEventListener("click", () => {
 //CARD
 const card = document.querySelector(".card");
 const btnCard = document.querySelector(".header__btn-card");
+const btnCardFechar = document.querySelector(".card__btn");
+
 btnCard.addEventListener("click", () => {
   const styleCard = card.style.display;
   card.style.display = "block";
@@ -36,4 +38,13 @@ btnCard.addEventListener("click", () => {
   header.style.filter = "brightness(40%) blur(5px)";
   player.style.animation = "0";
   fumaca.setAttribute("src", "img/fumaca-img.png");
+});
+
+btnCardFechar.addEventListener("click", () => {
+  card.style.display = "none";
+  main.style.filter = "";
+  header.style.filter = "";
+  btnModal.style.filter = "";
+  player.style.animation = "";
+  fumaca.setAttribute("src", "img/fumaca.gif");
 });

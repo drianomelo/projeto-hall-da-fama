@@ -37,6 +37,7 @@ body {
     background-image: url(img/icon-info.png);
     background-size: cover;
     border: none;
+    cursor: pointer;
 
     margin-right: .8em;
 
@@ -156,7 +157,7 @@ body {
     left: 13%;
     z-index: 20;
 
-    animation: player-animation .3s ease alternate infinite;
+    animation: player-animation .4s ease alternate infinite;
 }
 
 @keyframes player-animation {
@@ -223,10 +224,31 @@ body {
 }
 
 .card {
+    display: none;
+
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: 99;
+
+    
     background-color: transparent;
     width: 70%;
     height: 400px;
     perspective: 1000px;
+}
+
+.card__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card__inner {
+    transform: rotateY(180deg);
 }
 
 .card__front, .card__back {
@@ -244,10 +266,18 @@ body {
 }
 
 .card__front img {
-    width: 20%;
+    width: 50%;
     border-radius: 50%;
 }
 
 .card__back {
     background-image: linear-gradient(315deg, #1D4289, #C80F2E);
+    color: #FFF;
+    transform: rotateY(180deg);
 }
+
+.card__back img {
+    width: 40%;
+    border-radius: 50%;
+}
+

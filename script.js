@@ -5,6 +5,8 @@ const modal = document.querySelector(".modal");
 const player = document.querySelector(".main__player");
 const fumaca = document.querySelector(".main__gif");
 const header = document.querySelector(".header");
+const card = document.querySelector(".card");
+const btnCard = document.querySelector(".header__btn-card");
 
 btnModal.addEventListener("click", () => {
   const styleModal = modal.style.display;
@@ -22,4 +24,13 @@ btnFecharModal.addEventListener("click", () => {
   btnModal.style.filter = "";
   player.style.animation = "";
   fumaca.setAttribute("src", "img/fumaca.gif");
+});
+
+btnCard.addEventListener("click", () => {
+  const styleCard = card.style.display;
+  card.style.display = "block";
+  main.style.filter = "brightness(40%) blur(5px)";
+  header.style.filter = "brightness(40%) blur(5px)";
+  player.style.animation = "0";
+  fumaca.setAttribute("src", "img/fumaca-img.png");
 });

@@ -1,13 +1,13 @@
-const btnModal = document.querySelector(".header__btn-info");
-const btnFecharModal = document.querySelector(".modal__btn");
+//VARIÁVEIS GERAIS
 const main = document.querySelector(".main");
-const modal = document.querySelector(".modal");
 const player = document.querySelector(".main__player");
 const fumaca = document.querySelector(".main__gif");
 const header = document.querySelector(".header");
-const card = document.querySelector(".card");
-const btnCard = document.querySelector(".header__btn-card");
 
+//MODAL
+const btnModal = document.querySelector(".header__btn-info");
+const btnFecharModal = document.querySelector(".modal__btn");
+const modal = document.querySelector(".modal");
 btnModal.addEventListener("click", () => {
   const styleModal = modal.style.display;
   modal.style.display = "block";
@@ -26,6 +26,9 @@ btnFecharModal.addEventListener("click", () => {
   fumaca.setAttribute("src", "img/fumaca.gif");
 });
 
+//CARD
+const card = document.querySelector(".card");
+const btnCard = document.querySelector(".header__btn-card");
 btnCard.addEventListener("click", () => {
   const styleCard = card.style.display;
   card.style.display = "block";

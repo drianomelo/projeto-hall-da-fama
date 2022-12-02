@@ -4,7 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hall da Fama | NBA</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <img src="img/logo.png" alt="logo" class="header__img" />
+      <div class="header__btns">
+        <button class="header__btn-add"></button>
+        <button class="header__btn-info"></button>
+        <button class="header__btn-card"></button>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__front">
+          <img src="img/Michael Jordan-p.png" alt="Michael Jordan" />
+        </div>
+        <div class="card__back"></div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="main__dev">
+        <div class="main__social-medias">
+          <a
+            href="https://github.com/drianomelo"
+            target="_blank"
+            class="main__link"
+            ><img src="img/icon-git.png" alt="github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/adriano-melo-3500a6234/"
+            target="_blank"
+            class="main__link"
+            ><img src="img/icon-linekdin.png" alt="linkedin"
+          /></a>
+        </div>
+      </div>
+      <img src="img/seta.png" alt="seta" class="main__seta" />
+      <img src="img/podio.png" alt="pódio" class="main__img" />
+      <img src="img/fumaca.gif" alt="fumaça" class="main__gif" />
+      <img
+        src="img/Michael Jordan.png"
+        alt="Jogador de basquete Michael Jordan"
+        class="main__player"
+      />
+    </main>
+
+    <div class="modal">
+      <h2 class="modal__title">Informações para adicionar um novo jogador</h2>
+      <button class="modal__btn"></button>
+      <p class="modal__rules">1 - Tamanho da imagem na proporção de 20x35cm;</p>
+      <p class="modal__rules">
+        2 - Imagem no formato PNG, apenas com o jogador, com fundo recortado;
+      </p>
+      <p class="modal__rules">
+        3 - Preencha as demais informações de acordo com as especificações.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

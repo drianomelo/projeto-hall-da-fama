@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: .5em .5em 0;
+}
+
+.header__img {
+    width: 45%;
+}
+
+.header__btns {
+    display: flex;
+    align-items: center;
+}
+
+.header__btn-info, .header__btn-add, .header__btn-card {
+    background: none;
+    background-image: url(img/icon-info.png);
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+
+    margin-right: .8em;
+
+    width: 2em;
+    height: 2em;
+
+}
+
+.header__btn-info:hover, .header__btn-add:hover, .header__btn-card:hover {
+    animation: btn-animation .3s ease alternate infinite;
+}
+
+@keyframes btn-animation {
+    0% {
+        width: 2.2em;
+        height: 2.2em;    
+    }
+
+    25% {
+        width: 2.3em;
+        height: 2.3em;
+    }
+
+    50% {
+        width: 2.4em;
+        height: 2.4em;
+    }
+
+    100% {
+        width: 2.5em;
+        height: 2.5em;    
+    }
+}
+
+.header__btn-add {
+    background-image: url(img/icon-add.png);
+}
+
+.header__btn-card {
+    background-image: url(img/icon-card.png);
+    margin: 0;
+}

@@ -1,0 +1,44 @@
+.modal {
+    display: none;
+
+    background-color: rgba(43, 43, 43, .5);
+    border-radius: 10px;
+    color: #FFF;
+    
+
+    padding: 1.5em 1em 1em 1em;
+    width: 95%;
+
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    z-index: 99;
+}
+
+.modal__btn {
+    background: none;
+    background-image: url(img/icon-fechar.png);
+    background-size: cover;
+    border: none;
+
+    width: 1em;
+    height: 1em;
+
+    position: absolute;
+    top: 5%;
+    right: 2%;
+}
+
+.modal__title {
+    margin-bottom: 1em;
+    font-size: 1em;
+    text-align: center;
+}
+
+.modal__rules {
+    font-size: .8em;
+    font-weight: 300;
+
+    width: 87%;
+    margin: 0 auto .35em auto;
+}

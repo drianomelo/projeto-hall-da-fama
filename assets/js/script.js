@@ -14,7 +14,7 @@ btnModal.addEventListener("click", () => {
   main.style.filter = "brightness(40%) blur(5px)";
   header.style.filter = "brightness(40%) blur(5px)";
   player.style.animation = "0";
-  fumaca.setAttribute("src", "img/fumaca-img.png");
+  fumaca.setAttribute("src", "assets/img/fumaca-img.png");
 });
 
 btnFecharModal.addEventListener("click", () => {
@@ -23,7 +23,7 @@ btnFecharModal.addEventListener("click", () => {
   header.style.filter = "";
   btnModal.style.filter = "";
   player.style.animation = "";
-  fumaca.setAttribute("src", "img/fumaca.gif");
+  fumaca.setAttribute("src", "assets/img/fumaca.gif");
 });
 
 //CARD
@@ -37,7 +37,7 @@ btnCard.addEventListener("click", () => {
   main.style.filter = "brightness(40%) blur(5px)";
   header.style.filter = "brightness(40%) blur(5px)";
   player.style.animation = "0";
-  fumaca.setAttribute("src", "img/fumaca-img.png");
+  fumaca.setAttribute("src", "assets/img/fumaca-img.png");
 });
 
 btnCardFechar.addEventListener("click", () => {
@@ -46,5 +46,5 @@ btnCardFechar.addEventListener("click", () => {
   header.style.filter = "";
   btnModal.style.filter = "";
   player.style.animation = "";
-  fumaca.setAttribute("src", "img/fumaca.gif");
+  fumaca.setAttribute("src", "assets/img/fumaca.gif");
 });

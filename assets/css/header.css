@@ -17,7 +17,7 @@
 
 .header__btn-info, .header__btn-add, .header__btn-card {
     background: none;
-    background-image: url(img/icon-info.png);
+    background-image: url(../img/icon-info.png);
     background-size: cover;
     border: none;
     cursor: pointer;
@@ -56,10 +56,10 @@
 }
 
 .header__btn-add {
-    background-image: url(img/icon-add.png);
+    background-image: url(../img/icon-add.png);
 }
 
 .header__btn-card {
-    background-image: url(img/icon-card.png);
+    background-image: url(../img/icon-card.png);
     margin: 0;
 }
